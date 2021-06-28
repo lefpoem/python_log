@@ -1,3 +1,4 @@
+# picprocess
 from PIL import Image
 import numpy as np
 im0 = np.array(Image.open('m.jpeg').convert('L')) #按比例转换为灰度图
