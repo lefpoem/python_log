@@ -12,6 +12,6 @@ for i in range(scale+1):
     c = (i/scale)*100
     t -= time.process_time()
     # \r光标回到本行首行
-    print("\r{:>3.0f}% [{}->{}]".format(c,a,b),end='')
+    print("\r{:>3.0f}% [{}->{}] {:.2f}s".format(c,a,b,-t),end='')
     time.sleep(0.1) # 增加程序暂时挂机，增加停留时间
 print("\n{0:-^16}".format("执行结束"))
